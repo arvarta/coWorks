@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>view</title>
+        <script src="https://cdn.jsdelivr.net/npm/quill@2/dist/quill.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/quill@2/dist/quill.snow.css"rel="stylesheet"/>
+        <link href="/css/common.css" rel="stylesheet" type="text/css" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="module" src="../../script/asset/topLayerAsset.js"></script>
+        <script type="module" src="../../script/asset/contentAsset.js"></script>
+        <script type="module" src="../../script/asset/boardViewAsset.js"></script>
+    </head>
+    <body>
+        <div id="header"></div>
+        <div id="left"></div>
+        <div class="content">
+            <div class="post_view">
+                <div class="post_title">제목</div>
+
+                <div class="post_info">
+                    <a target="_blank" class="user_info">
+                        <div class="user_thumb">
+                            <img src="../../img/thumb_profile.svg" alt="image" style="opacity: 1" />
+                        </div>
+                        <div class="user_profile">
+                            <span class="user_name">작성자</span>
+                        </div>
+                    </a>
+
+                    <div class="date">
+                        <span class="creation_date">작성일 : 2025-05-02 20:16:11</span>
+                    </div>
+                </div>
+                <div class="post_content">
+                    내용
+                </div>
+                <div class="btn_box">
+                    <button type="button">수정</button>
+                    <button type="button">삭제</button>
+                </div>
+                <div class="comment_area">
+                    <ul class="comment_list"></ul>
+                     <!--<li class="comment_li">
+                            <a href="작성자 프로필로 이동" target="_blank" class="user_info">
+                                <div class="user_thumb">
+                                    <img src="../../img/thumb_profile.svg" alt="image" style="opacity: 1" />
+                                </div>
+                                <div class="user_profile">
+                                    <span class="user_name">라이언</span>
+                                </div>
+                            </a>
+                            <div class="date_wrap">
+                                <span class="creation_date">작성일 : 2025-05-02 14:05:00</span>
+                                <span class="update_date"> | 최근수정 : 2025-05-03 10:00:00</span>
+                            </div>
+                            <p class="comment_content">복지포인트 아직 다 안쓴사람이 있다?????</p>
+                            <div class="btn_box_small">
+                                <div class="left">
+                                    <button type="button">답글</button>
+                                </div>
+                                <div class="right">
+                                    <button type="button">수정</button>
+                                    <button type="button">삭제</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <ul class="reply_list">
+                                <li class="reply_li">
+                                    <a href="작성자 프로필로 이동" target="_blank" class="user_info">
+                                        <div class="user_thumb">
+                                            <img src="../../img/thumb_profile.svg" alt="image" style="opacity: 1" />
+                                        </div>
+                                        <div class="user_profile">
+                                            <span class="user_name">춘식이</span>
+                                        </div>
+                                    </a>
+                                    <div class="date_wrap">
+                                        <span class="creation_date">작성일 : 2025-05-02 14:11:00</span>
+                                        <span class="update_date"></span>
+                                    </div>
+                                    <p class="reply_content">그거 전데여?</p>
+                                    <div class="btn_box_small">
+                                        <div class="left"></div>
+                                        <div class="right">
+                                            <button type="button">수정</button>
+                                            <button type="button">삭제</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <div class="reply_modify_area">
+                                    <a href="작성자 프로필로 이동" target="_blank" class="user_info">
+                                        <div class="user_thumb">
+                                            <img src="../../img/thumb_profile.svg" alt="image" style="opacity: 1" />
+                                        </div>
+                                        <div class="user_profile">
+                                            <span class="user_name">라이언</span>
+                                        </div>
+                                    </a>
+                                    <div id="replyModi-editor">대댓글 수정중~~~</div>
+                                    <button type="button" class="cancel">취소</button>
+                                    <button type="submit">수정</button>
+                                </div>
+                                <li class="reply_li">
+                                    <a href="작성자 프로필로 이동" target="_blank" class="user_info">
+                                        <div class="user_thumb">
+                                            <img src="../../img/thumb_profile.svg" alt="image" style="opacity: 1" />
+                                        </div>
+                                        <div class="user_profile">
+                                            <span class="user_name">어피치</span>
+                                        </div>
+                                    </a>
+                                    <div class="date_wrap">
+                                        <span class="creation_date">작성일 : 2025-05-02 14:11:00</span>
+                                        <span class="update_date"></span>
+                                    </div>
+                                    <p class="reply_content">복지몰에서 뭐사셨어요?</p>
+                                    <div class="btn_box_small">
+                                        <div class="left"></div>
+                                        <div class="right">
+                                            <button type="button">수정</button>
+                                            <button type="button">삭제</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="comment_li">
+                            <a href="작성자 프로필로 이동" target="_blank" class="user_info">
+                                <div class="user_thumb">
+                                    <img src="../../img/thumb_profile.svg" alt="image" style="opacity: 1" />
+                                </div>
+                                <div class="user_profile">
+                                    <span class="user_name">어피치</span>
+                                </div>
+                            </a>
+                            <div class="date_wrap">
+                                <span class="creation_date">작성일 : 2025-05-02 14:05:00</span>
+                                <span class="update_date"> | 최근수정 : 2025-05-03 10:00:00</span>
+                            </div>
+                            <p class="comment_content">네 알겠습니다~~</p>
+                            <div class="btn_box_small">
+                                <div class="left">
+                                    <button type="button">답글</button>
+                                </div>
+                                <div class="right">
+                                    <button type="button">수정</button>
+                                    <button type="button">삭제</button>
+                                </div>
+                            </div>
+                        </li>
+                        <div class="reply_write_area">
+                            <a href="작성자 프로필로 이동" target="_blank" class="user_info">
+                                <div class="user_thumb">
+                                    <img src="../../img/thumb_profile.svg" alt="image" style="opacity: 1" />
+                                </div>
+                                <div class="user_profile">
+                                    <span class="user_name">라이언</span>
+                                </div>
+                            </a>
+                            <textarea id="reply-editor"></textarea>
+                            <button type="submit">대댓글 등록</button>
+                        </div>
+                        <li class="comment_li">
+                            <a href="작성자 프로필로 이동" target="_blank" class="user_info">
+                                <div class="user_thumb">
+                                    <img src="../../img/thumb_profile.svg" alt="image" style="opacity: 1" />
+                                </div>
+                                <div class="user_profile">
+                                    <span class="user_name">라이언</span>
+                                </div>
+                            </a>
+                            <div class="date_wrap">
+                                <span class="creation_date">작성일 : 2025-05-02 14:05:00</span>
+                                <span class="update_date"> | 최근수정 : 2025-05-03 10:00:00</span>
+                            </div>
+                            <p class="comment_content">안녕하세요 긴 댓글 예시입니다 안녕하세요 긴 댓글 예시입니다 안녕하세요 긴 댓글 예시입니다 안녕하세요 긴 댓글 예시입니다 안녕하세요 긴 댓글 예시입니다 안녕하세요 긴 댓글 예시입니다 안녕하세요 긴 댓글 예시입니다 안녕하세요 긴 댓글 예시입니다</p>
+                            <div class="btn_box_small">
+                                <div class="left">
+                                    <button type="button">답글</button>
+                                </div>
+                                <div class="right">
+                                    <button type="button">수정</button>
+                                    <button type="button">삭제</button>
+                                </div>
+                            </div>
+                        </li>
+                        <div class="comment_modify_area">
+                            <a href="작성자 프로필로 이동" target="_blank" class="user_info">
+                                <div class="user_thumb">
+                                    <img src="../../img/thumb_profile.svg" alt="image" style="opacity: 1" />
+                                </div>
+                                <div class="user_profile">
+                                    <span class="user_name">라이언</span>
+                                </div>
+                            </a>
+                            <div id="commentModi-editor">댓글 수정중입니다?? 수정할 내용 불러와지건 아시져?</div>
+                            <button type="button" class="cancel">취소</button>
+                            <button type="submit">수정</button>
+                        </div>
+                        <li class="comment_li">
+                            <a href="작성자 프로필로 이동" target="_blank" class="user_info">
+                                <div class="user_thumb">
+                                    <img src="../../img/thumb_profile.svg" alt="image" style="opacity: 1" />
+                                </div>
+                                <div class="user_profile">
+                                    <span class="user_name">라이언</span>
+                                </div>
+                            </a>
+                            <div class="date_wrap">
+                                <span class="creation_date">작성일 : 2025-05-02 14:05:00</span>
+                                <span class="update_date"> | 최근수정 : 2025-05-03 10:00:00</span>
+                            </div>
+                            <p class="comment_content">안녕하세요 긴 댓글 예시입니다 안녕하세요 긴 댓글 예시입니다 안녕하세요 긴 댓글 예시입니다 안녕하세요 긴 댓글 예시입니다 안녕하세요 긴 댓글 예시입니다 안녕하세요 긴 댓글 예시입니다 안녕하세요 긴 댓글 예시입니다 안녕하세요 긴 댓글 예시입니다</p>
+                            <div class="btn_box_small">
+                                <div class="left">
+                                    <button type="button">답글</button>
+                                </div>
+                                <div class="right">
+                                    <button type="button">수정</button>
+                                    <button type="button">삭제</button>
+                                </div>
+                            </div>
+                        </li>-->
+				<div class="comment_write_area">
+					<a target="_blank" class="user_info">
+						<div class="user_thumb">
+							<img src="/img/thumb_profile.svg" alt="image" style="opacity: 1;">
+						</div>
+						<div class="user_profile">
+							<span class="user_name" id="cmt_writer">사용자</span>
+						</div>
+					</a>
+					<div id="comment-editor" class="ql-container"><div class="ql-editor ql-blank" data-gramm="false" contenteditable="true" data-placeholder="댓글을 입력하세요..."><p><br></p></div><div class="ql-clipboard" contenteditable="true" tabindex="-1"></div></div>
+					<button type="submit" class="comment_submit">댓글 등록</button>
+				</div>
+	                
+                </div>
+            </div> 
+            <div class="btn_box">
+                <button type="button" class="btn_task">목록으로</button>
+                <button type="button" class="btn_task">맨위로</button>
+            </div>
+        </div>
+    </body>
+    <script>
+        const quillComment = new Quill("#comment-editor", {
+            placeholder: "댓글을 입력하세요...",
+            modules: {
+                toolbar: false,
+            },
+        });
+        const quillCommentModi = new Quill("#commentModi-editor", {
+            placeholder: "댓글을 입력하세요...",
+            modules: {
+                toolbar: false,
+            },
+        });
+
+        const quillReply = new Quill("#reply-editor", {
+            placeholder: "대댓글을 입력하세요...",
+            modules: {
+                toolbar: false,
+            },
+        });
+        const quillReplyModi = new Quill("#replyModi-editor", {
+            placeholder: "대댓글을 입력하세요...",
+            modules: {
+                toolbar: false,
+            },
+        });
+    </script>
+</html>

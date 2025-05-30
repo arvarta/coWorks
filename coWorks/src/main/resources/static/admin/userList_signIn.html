@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html class="admin">
+<head>
+	<meta charset="utf-8">
+	<title>admin</title>
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type='module' src="../script/asset/topLayerAsset.js"></script>
+	<script type='module' src="../script/asset/adminListAsset.js"></script>
+</head>
+<body>
+	<div id="header_admin"></div>
+	<div id="left_admin"></div>
+ 	<div class="content">
+ 		<div class="title">회원 관리</div>
+        <div class="tab_menu">
+			<ul>
+				<li><a href="user">전체 사용자</a></li>
+				<li class="on"><a href="join-list">회원가입 신청 내역</a></li>
+				<li><a href="out-list">회원탈퇴 신청 내역</a></li>			</ul>
+		</div>
+        <div class="member_list">
+			<div class="member_list_count">총 <em>num</em> 명</div>
+			<ul id="signIns">
+			<!-- 
+				<li class="pop_btn">
+					<div class="user_info">
+						<div class="user_thumb">
+							<img src="./img/thumb_profile.svg" alt="image" style="opacity: 1;">
+						</div>
+						<div class="user_profile">
+							<span class="user_name">춘식이</span>
+							<span class="user_position">대리</span>
+							<div class="user_subscript"><p>야옹 야옹!!!!야옹!</p></div>
+						</div>
+					</div>
+				</li>
+			 -->
+			</ul>
+		</div>
+        <div class="pagination"></div>
+ 	</div>
+    <div class="layer_pop" style="display: none;">
+        <div class="pop_box">
+            <div class="pop_top">
+                <button type="button" class="pop_close">닫기</button>
+            </div>
+            <div class="pop_con">
+                <div class="profile">
+                    <div class="profile_photo">
+                        <img src='/img/thumb_profile.svg' alt='image' style='opacity: 1;'>
+                    </div>
+                    <div class="user_profile" id="user_modal_profile">
+                        <span class="user_name">라이언</span>
+                        <div class="user_subscript">
+                        <p>자기소개를 입력해주세요.</p>
+                        </div>
+                    </div>
+		        </div>
+                <ul class="infor_list">
+                    <li>
+                        <span class="tit">소속</span>
+                        <p>개발팀</p>
+                    </li>
+                    <li>
+                        <span class="tit">직책</span>
+                        <p>팀장</p>
+                    </li>
+                    <li>
+                        <span class="tit">휴대폰</span>
+                        <p>+82-10-8562-8574</p>
+                    </li>
+                    <li>
+                        <span class="tit">이메일</span>
+                        <p>ryan@gmail.com</p>
+                    </li>
+                    <li>
+                        <span class="tit">생일</span>
+                        <p>1999. 09. 27</p>
+                    </li>
+			    </ul>
+            </div>
+            <div class="btnList">
+                <button class="deny">거절</button>
+                <button class="btn_primary">승인</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

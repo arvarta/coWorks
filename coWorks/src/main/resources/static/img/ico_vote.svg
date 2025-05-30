@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 20 20">
+  <!-- 상단 투표 상자 뚜껑 -->
+  <path d="M6 5l4-4 4 4" />
+  <!-- 투표함 테두리 -->
+  <rect x="2.5" y="7" width="15" height="10.5" rx="1.5" />
+  <!-- 체크 표시 -->
+  <path d="M7 12l2 2 4-4" />
+</svg>

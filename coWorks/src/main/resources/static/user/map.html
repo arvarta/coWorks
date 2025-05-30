@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>organization</title>
+<link href="/css/common.css" rel="stylesheet" type="text/css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type='module' src="/script/asset/topLayerAsset.js"></script>
+<script type='module' src="/script/asset/contentAsset.js"></script>
+</head>
+<body>
+	<div id="header"></div>
+ 	<div class="content">
+        <div class="title" style="text-align: center;">찾아오시는 길</div>
+        <div id="map" style="width:500px; height:300px; margin: 20px auto;"></div>
+		</div>
+ 	</div>
+</body>  
+<script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=jgiod55ep9"></script>
+<div id="map" style="width:100%;height:400px;"></div>
+
+<script>
+  var mapOptions = {
+    center: new naver.maps.LatLng(35.15948248114, 129.06025644724), // 중심 위치
+    zoom: 16
+  };
+
+  var map = new naver.maps.Map('map', mapOptions);
+
+  // 마커 위치 지정
+  var marker = new naver.maps.Marker({
+    position: new naver.maps.LatLng(35.15948248114, 129.06025644724), // 마커 위치
+    map: map, // 마커를 표시할 지도
+    title: "부산광역시 부산진구 중앙대로 749" // 마우스 오버 시 표시될 텍스트
+  });
+</script>
+</html>

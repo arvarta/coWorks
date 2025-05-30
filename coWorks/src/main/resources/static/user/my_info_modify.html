@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>myPage</title>
+<link href="/css/common.css" rel="stylesheet" type="text/css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type='module' src="/script/asset/topLayerAsset.js"></script>
+<script type='module' src="/script/asset/userMypageAsset.js"></script>
+</head>
+<body>
+	<div id="header"></div>
+	<div id="left_my"></div>
+ 	<div class="content">
+		<div class="my_subBox">
+			<div class="title">프로필 편집</div>
+			<ul class="infor_list myInfo_modify">
+                <li>
+                    <div class="tit">프로필 이미지</div>
+                    <div class="con">
+						<div class="profile_photo">
+						  <img src="/img/thumb_profile.svg">
+						</div>
+						<div class="profile_photo_wrap">
+							<div class="txt">
+							  나를 대표하는 프로필 이미지를 설정해보세요.<br>
+							  크기 : 420 px X 420 px, JPG, PNG는 10MB 미만, GIF는 2MB 미만<br>
+							  형식 : jpg, png, gif
+							</div>
+	                        <label title="파일첨부" class="btn_gray">
+	                            <input type="file" name="upload_file" multiple="" accept="image/*">
+	                            이미지 변경
+	                        </label>
+						</div>
+                    </div>
+                </li>
+				<li>
+					<div class="tit">프로필 메시지</div>
+					<div class="option_area">
+						<input placeholder="자기소개를 입력하주세요. 30자 이하">
+					</div>
+				</li>
+		    </ul>
+			<div class="btnList">
+				<button type="button" class="btn_primary">저장</button>
+			</div>
+			<div class="title">비밀번호 변경</div>
+			<ul class="infor_list myInfo_modify">
+				<li>
+					<div class="tit">기존 비밀번호</div>
+					<div class="option_area">
+						<input type="password">
+					</div>
+				</li>
+				<li>
+					<div class="tit">새 비밀번호</div>
+					<div class="option_area">
+						<input type="password">
+					</div>
+				</li>
+				<li>
+					<div class="tit">새 비밀번호 확인</div>
+					<div class="option_area">
+						<input type="password">
+					</div>
+				</li>
+				
+		    </ul>
+			<div class="btnList">
+				<button type="button" class="btn_primary" id="change_pw">확인</button>
+			</div>
+		</div>
+ 	</div>
+
+</body>
+    
+  
+</html>

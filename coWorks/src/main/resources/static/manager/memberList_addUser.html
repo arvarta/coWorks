@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>management</title>
+<link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type='module' src="../script/asset/topLayerAsset.js"></script>
+</head>
+<body>
+	<div id="header"></div>
+	<div id="left_manager"></div>
+ 	<div class="content">
+		<div class="title">게시판 회원 관리</div>
+		<div class="sub_title">게시판을 사용하는 회원리스트입니다.</div>
+		<div class="tab_menu">
+			<ul>
+				<li class="on"><a href="#">게시판 사용자</a></li>
+				<li><a href="#">차단/정지된 사용자</a></li>
+			</ul>
+		</div>
+        <div class="member_list">
+			<div class="member_list_count">총 <em>12</em> 명</div>
+			<ul>
+				<li>
+					<a href="프로필 상세로 이동" target="_blank" class="user_info">
+						<div class="user_thumb">
+							<img src="./img/thumb_profile.svg" alt="image" style="opacity: 1;">
+						</div>
+						<div class="user_profile">
+							<span class="user_name">라이언</span>
+							<span class="user_position">과장</span>
+							<div class="user_subscript"><p>자기소개를 입력해주세요.</p></div>
+						</div>
+					</a>
+					<div class="right">
+						<div class="member_level">Level 1</div>
+						<div class="block_wrap">
+                            <button class="btn_line">관리</button>
+                            <button class="btn_line">삭제</button>
+                        </div>
+					</div>
+				</li>
+				<li>
+					<a href="프로필 상세로 이동" target="_blank" class="user_info">
+						<div class="user_thumb">
+							<img src="./img/sample01.PNG" alt="image" style="opacity: 1;">
+						</div>
+						<div class="user_profile">
+							<span class="user_name">강형욱</span>
+							<span class="user_position">대리</span>
+							<div class="user_subscript"><p>안녕하세요 접니다.</p></div>
+						</div>
+					</a>
+					<div class="right">
+						<div class="member_level">Level 2</div>
+						<div class="block_wrap">
+                            <button class="btn_line">관리</button>
+                            <button class="btn_line">삭제</button>
+                        </div>
+					</div>
+				</li>
+				<li>
+					<a href="프로필 상세로 이동" target="_blank" class="user_info">
+						<div class="user_thumb">
+							<img src="./img/thumb_profile.svg" alt="image" style="opacity: 1;">
+						</div>
+						<div class="user_profile">
+							<span class="user_name">춘식이</span>
+							<span class="user_position">대리</span>
+							<div class="user_subscript"><p>야옹 야옹!!!!야옹!</p></div>
+						</div>
+					</a>
+					<div class="right">
+						<div class="member_level">Level 1</div>
+						<div class="block_wrap">
+                            <button class="btn_line">관리</button>
+                            <button class="btn_line">삭제</button>
+                        </div>
+					</div>
+				</li>
+				<li>
+					<a href="프로필 상세로 이동" target="_blank" class="user_info">
+						<div class="user_thumb">
+							<img src="./img/thumb_profile.svg" alt="image" style="opacity: 1;">
+						</div>
+						<div class="user_profile">
+							<span class="user_name">박찬호</span>
+							<span class="user_position">대리</span>
+							<div class="user_subscript"><p>제가 la에 있을때는 말이죠 정말 제가 꿈에 무대인 메이저리그로 진출해서 가는 식당마다 싸인해달라 기자들은..</p></div>
+						</div>
+					</a>
+					<div class="right">
+						<div class="member_level">Level 1</div>
+						<div class="block_wrap">
+                            <button class="btn_line">관리</button>
+                            <button class="btn_line">삭제</button>
+                        </div>
+					</div>
+				</li>
+				<li>
+					<a href="프로필 상세로 이동" target="_blank" class="user_info">
+						<div class="user_thumb">
+							<img src="./img/thumb_profile.svg" alt="image" style="opacity: 1;">
+						</div>
+						<div class="user_profile">
+							<span class="user_name">윤종두</span>
+							<span class="user_position">대리</span>
+							<div class="user_subscript"><p>기분 안좋음 말걸지마삼</p></div>
+						</div>
+					</a>
+					<div class="right">
+						<div class="member_level">Level 1</div>
+						<div class="block_wrap">
+                            <button class="btn_line">관리</button>
+                            <button class="btn_line">삭제</button>
+                        </div>
+					</div>
+				</li>
+				<li>
+					<a href="프로필 상세로 이동" target="_blank" class="user_info">
+						<div class="user_thumb">
+							<img src="./img/thumb_profile.svg" alt="image" style="opacity: 1;">
+						</div>
+						<div class="user_profile">
+							<span class="user_name">김은성</span>
+							<span class="user_position">대리</span>
+							<div class="user_subscript"><p>안녕하세요 김은성입니다</p></div>
+						</div>
+					</a>
+					<div class="right">
+						<div class="member_level">Level 1</div>
+						<div class="block_wrap">
+                            <button class="btn_line">관리</button>
+                            <button class="btn_line">삭제</button>
+                        </div>
+					</div>
+				</li>
+				<li>
+					<a href="프로필 상세로 이동" target="_blank" class="user_info">
+						<div class="user_thumb">
+							<img src="./img/thumb_profile.svg" alt="image" style="opacity: 1;">
+						</div>
+						<div class="user_profile">
+							<span class="user_name">김은성</span>
+							<span class="user_position">대리</span>
+							<div class="user_subscript"><p>안녕하세요 김은성입니다</p></div>
+						</div>
+					</a>
+					<div class="right">
+						<div class="member_level">Level 1</div>
+						<div class="block_wrap">
+                            <button class="btn_line">관리</button>
+                            <button class="btn_line">삭제</button>
+                        </div>
+					</div>
+				</li>
+				<li>
+					<a href="프로필 상세로 이동" target="_blank" class="user_info">
+						<div class="user_thumb">
+							<img src="./img/thumb_profile.svg" alt="image" style="opacity: 1;">
+						</div>
+						<div class="user_profile">
+							<span class="user_name">김은성</span>
+							<span class="user_position">대리</span>
+							<div class="user_subscript"><p>안녕하세요 김은성입니다</p></div>
+						</div>
+					</a>
+					<div class="right">
+						<div class="member_level">Level 1</div>
+						<div class="block_wrap">
+                            <button class="btn_line">관리</button>
+                            <button class="btn_line">삭제</button>
+                        </div>
+					</div>
+				</li>
+				<li>
+					<a href="프로필 상세로 이동" target="_blank" class="user_info">
+						<div class="user_thumb">
+							<img src="./img/thumb_profile.svg" alt="image" style="opacity: 1;">
+						</div>
+						<div class="user_profile">
+							<span class="user_name">김은성</span>
+							<span class="user_position">대리</span>
+							<div class="user_subscript"><p>안녕하세요 김은성입니다</p></div>
+						</div>
+					</a>
+					<div class="right">
+						<div class="member_level">Level 1</div>
+						<div class="block_wrap">
+                            <button class="btn_line">관리</button>
+                            <button class="btn_line">삭제</button>
+                        </div>
+					</div>
+				</li>
+			</ul>
+			<div class="pagination">
+			<a class="page_first"></a> 
+			<a class="page_prev"></a> 
+			<span class="page_number">
+				<a class="on">1</a>
+				<a>2</a>
+			</span> 
+			<a class="page_next"></a> 
+			<a class="page_last"></a>
+		</div>
+		</div>
+		<div class="btnList">
+            <button class="btn_primary">멤버 추가</button>
+        </div>
+	</div>
+	<div class="layer_pop" >
+		<div class="pop_box">
+			<div class="pop_top">
+				<button type="button" class="pop_close">닫기</button>
+				<p>게시판 멤버 추가</p>
+			</div>
+			<div class="pop_con">
+				<ul class="user_select">
+					<li>
+						<div class="check_wrap">
+							<input type="checkbox" id="user01">
+							<label class="user_info" for="user01">
+								<span class="user_name">강형욱</span>
+								<span class="user_department">개발팀</span>
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="check_wrap">
+							<input type="checkbox" id="user02">
+							<label class="user_info" for="user02">
+								<span class="user_name">노홍철</span>
+								<span class="user_department">경영지원팀</span>
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="check_wrap">
+							<input type="checkbox" id="user03">
+							<label class="user_info" for="user03">
+								<span class="user_name">도경수</span>
+								<span class="user_department">개발팀</span>
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="check_wrap">
+							<input type="checkbox" id="user04">
+							<label class="user_info" for="user04">
+								<span class="user_name">라이언</span>
+								<span class="user_department">디자인팀</span>
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="check_wrap">
+							<input type="checkbox" id="user05">
+							<label class="user_info" for="user05">
+								<span class="user_name">마동석</span>
+								<span class="user_department">기획팀</span>
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="check_wrap">
+							<input type="checkbox" id="user06">
+							<label class="user_info" for="user06">
+								<span class="user_name">박명수</span>
+								<span class="user_department">디자인팀</span>
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="check_wrap">
+							<input type="checkbox" id="user07">
+							<label class="user_info" for="user07">
+								<span class="user_name">성심당</span>
+								<span class="user_department">디자인팀</span>
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="check_wrap">
+							<input type="checkbox" id="user08">
+							<label class="user_info" for="user08">
+								<span class="user_name">이수만</span>
+								<span class="user_department">기획팀</span>
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="check_wrap">
+							<input type="checkbox" id="user09">
+							<label class="user_info" for="user09">
+								<span class="user_name">재갈유진</span>
+								<span class="user_department">기획팀</span>
+							</label>
+						</div>
+					</li><li>
+						<div class="check_wrap">
+							<input type="checkbox" id="user10">
+							<label class="user_info" for="user10">
+								<span class="user_name">차승원</span>
+								<span class="user_department">기획팀</span>
+							</label>
+						</div>
+					</li><li>
+						<div class="check_wrap">
+							<input type="checkbox" id="user11">
+							<label class="user_info" for="user11">
+								<span class="user_name">카리나</span>
+								<span class="user_department">기획팀</span>
+							</label>
+						</div>
+					</li><li>
+						<div class="check_wrap">
+							<input type="checkbox" id="user12">
+							<label class="user_info" for="user12">
+								<span class="user_name">태을미</span>
+								<span class="user_department">개발팀</span>
+							</label>
+						</div>
+					</li><li>
+						<div class="check_wrap">
+							<input type="checkbox" id="user13">
+							<label class="user_info" for="user13">
+								<span class="user_name">피복일</span>
+								<span class="user_department">경영지원팀</span>
+							</label>
+						</div>
+					</li><li>
+						<div class="check_wrap">
+							<input type="checkbox" id="user14">
+							<label class="user_info" for="user14">
+								<span class="user_name">황보윤지</span>
+								<span class="user_department">기획팀</span>
+							</label>
+						</div>
+					</li>
+				</ul>
+				<button type="button" class="btn_core">확인</button>
+			</div>
+		</div>
+		<div class="back_btn"></div>
+	</div>
+</body>  
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+<script>
+	var quill = new Quill('#editor-container', {
+        theme: 'snow',
+        placeholder: '내용을 입력하세요...',
+        modules: {
+            toolbar: false // 툴바 제거
+        }
+    });
+</script>
+</html>

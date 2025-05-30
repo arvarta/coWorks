@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="admin">
+<head>
+	<meta charset="utf-8">
+	<title>admin</title>
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type='module' src="../script/asset/topLayerAsset.js"></script>
+	<script type='module' src="../script/asset/adminListAsset.js"></script>
+</head>
+<body>
+	<div id="header_admin"></div>
+	<div id="left_admin"></div>
+ 	<div class="content">
+ 		<div class="title">게시판 관리</div>
+        <div class="tab_menu">
+			<ul>
+				<li class="on"><a href="board">게시판</a></li>
+				<li><a href="proposal">게시판 추가 신청 내역</a></li>
+			</ul>
+		</div>
+        <div class="table_list">
+                <table id="listTable">
+                    <colgroup>
+                        <col style="width: 220px;">
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <td>게시판 명</td>
+                            <td>게시판 설명</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+ 	</div>
+</body>
+</html>

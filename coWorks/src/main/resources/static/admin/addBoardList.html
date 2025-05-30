@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html class="admin">
+<head>
+	<meta charset="utf-8">
+	<title>admin</title>
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type='module' src="/script/asset/topLayerAsset.js"></script>
+	<script type='module' src="/script/asset/contentAsset.js"></script>
+	<script type='module' src="/script/asset/adminListAsset.js"></script>
+</head>
+<body>
+	<div id="header_admin"></div>
+	<div id="left_admin"></div>
+ 	<div class="content">
+ 		<div class="title">게시판 관리</div>
+        <div class="tab_menu">
+			<ul>
+				<li><a href="board">게시판</a></li>
+				<li class="on"><a href="proposal">게시판 추가 신청 내역</a></li>
+			</ul>
+		</div>
+        <div class="table_list">
+            <table id="addLists">
+                <colgroup>
+                    <col style="width: 220px;">
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <td>게시판 명</td>
+                        <td>게시판 설명</td>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>                
+        </div>
+ 	</div>
+    <div class="layer_pop" style="display: none;">
+        <div class="pop_box">
+            <div class="pop_top">
+                <button type="button" class="pop_close">닫기</button>
+                <p>게시판 추가 신청</p>
+            </div>
+            <div class="pop_con">
+                <ul class="board_infor_list">
+                    <li>
+                        <span class="tit">제목</span>
+                        <p>돈사모 게시판</p>
+                    </li>
+                    <li>
+                        <span class="tit">설명</span>
+                        <p>돈까스를 사랑하는 모임 회원들의 게시판입니다.</p>
+                    </li>
+                    <li>
+                        <span class="tit">운영자</span>
+                        <p>조유진</p>
+                    </li>
+                    <li>
+                        <span class="tit">멤버</span>
+                        <p>남은빈, 손세은, 이정우, 이창호, 남은빈, 손세은, 이정우, 이창호, 남은빈, 손세은, 이정우, 이창호</p>
+                    </li>
+                    <li>
+                        <span class="tit">코멘트</span>
+                        <p>관리자님 우리 돈사모들을 위해 꼭 승인해주세요!! 제발</p>
+                    </li>
+			    </ul>
+            </div>
+            <div class="btnList">
+                <button>거절</button>
+                <button class="btn_primary">승인</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

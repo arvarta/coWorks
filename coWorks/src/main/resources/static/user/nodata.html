@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>management</title>
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type='module' src="../script/asset/topLayerAsset.js"></script>
+</head>
+<body>
+	<div id="header"></div>
+	<div id="left_my"></div>
+ 	<div class="content">
+ 		<div class="write">
+            <div class="title">1:1 문의 목록</div>
+            <!-- <div class="sub_title">문의목록입니다</div> -->
+            <div class="tab_menu">
+                <ul>
+                    <li class="on"><a href="#">미처리 문의</a></li>
+                    <li><a href="#">전체 문의</a></li>
+                </ul>
+            </div>
+ 			<div class="table_list">
+                <table>
+                    <colgroup>
+                        <col style="width: 60px;">
+                        <col style="width: 140px;">
+                        <col>
+                        <col style="width: 100px;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <td>작성자</td>
+                            <td>문의 분류</td>
+                            <td>제목</td>
+                            <td>일자</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+							<td colspan="4">
+								<div class="err_message">
+									<p class="nodata">nodata</p>
+								</div>
+							</td>
+						</tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pagination">
+			<a class="page_first"></a> 
+			<a class="page_prev"></a> 
+			<span class="page_number">
+				<a class="on">1</a>
+				<a>2</a>
+			</span> 
+			<a class="page_next"></a> 
+			<a class="page_last"></a>
+		</div>
+ 		</div>
+ 	</div>
+</body>  
+</html>

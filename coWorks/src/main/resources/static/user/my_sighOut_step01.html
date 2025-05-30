@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>myPage</title>
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type='module' src="../script/asset/topLayerAsset.js"></script>
+<script type='module' src="../script/asset/userMypageAsset.js"></script>
+</head>
+<body>
+	<div id="header"></div>
+	<div id="left_my"></div>
+ 	<div class="content">
+ 		<div class="my_subBox">
+			<div class="title">회원탈퇴 유의사항</div>
+			<div class="sub_title">회원탈퇴를 신청하기 전에 안내 사항을 꼭 확인해주세요.</div>
+			<div class="withdraw_notice">
+				<ul>
+					<li>사용하고 계신 계정은 탈퇴할 경우 30일 이내 재사용 및 복구가 가능합니다.</li>
+					<li>탈퇴 후에도 게시판형 서비스에 등록한 게시물은 그대로 남아 있습니다.</li>
+					<li>게시판,  문의 등에 올린 게시글 및 댓글은 탈퇴 시 자동 삭제되지 않고 그대로 남아 있습니다.</li>
+					<li>삭제를 원하는 게시글이 있다면 반드시 탈퇴 전 비공개 처리하거나 삭제하시기 바랍니다.</li>
+				</ul>
+			</div>
+			<div class="check_wrap">
+				<input type="checkbox" id="agree">
+				<label for="agree">안내사항을 확인했으며 동의합니다</label>
+			</div>
+			<div class="btnList">
+               <a><button class="btn_primary" id="withdraw_confirm">확인</button></a>
+			</div>
+ 		</div>
+ 	</div>
+</body>  
+</html>

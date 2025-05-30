@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html class="admin">
+<head>
+	<meta charset="utf-8">
+	<title>admin</title>
+	<link href="/css/common.css" rel="stylesheet" type="text/css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type='module' src="/script/asset/topLayerAsset.js"></script>
+	<script type='module' src="/script/asset/contentAsset.js"></script>
+	<script type='module' src="/script/asset/adminBoardInfoAsset.js"></script>
+</head>
+<body>
+	<div id="header_admin"></div>
+	<div id="left_admin"></div>
+ 	<div class="content">
+ 		<div class="title" id="admin_title">게시판</div>
+        <div class="sub_title" id="admin_title_sub">게시판설명</div>
+        <div class="tab_menu">
+			<ul id="boardList_ul">
+				<li><a>게시글</a></li>
+				<li class="on"><a>게시판 정보 관리</a></li>
+				<li><a>숨겨진 게시글</a></li>
+			</ul>
+		</div>
+        <div class="option_list">
+	 		<div class="option">
+	 			<div class="title_area">게시판 제목</div>
+	 			<div class="option_area">
+		 			<input class="post_title" placeholder="제목을 입력해 주세요." value="사내 동호회 게시판">
+	 			</div>
+	 		</div>
+            <div class="option">
+	 			<div class="title_area">게시판 설명</div>
+	 			<div class="option_area">
+		 			<input class="post_title" placeholder="게시판 설명을 입력해 주세요." value="사내 동호회 게시판입니다. 사내 환영">
+	 			</div>
+	 		</div>
+            <div class="option">
+	 			<div class="title_area">게시판 운영자</div>
+	 			<div class="option_area">
+	 				<button type="button" title="" class="btn_gray userList_btn">운영자 선택</button>
+					<div class="user_list">
+						<div class="user_wrap">
+                            <div class="user_name">윤종두</div>
+							<button class="btn_close"></button>
+						</div>
+					</div>
+	 			</div>
+	 		</div>
+ 		</div>
+		<div class="btnList">
+			<button type="button" class="btn_primary">저장</button>
+		</div>
+ 	</div>
+	<div class="layer_pop_userList" style="display: none;">
+        <div class="pop_box">
+            <div class="pop_top">
+                <button type="button" class="pop_close">닫기</button>
+                <p>운영자 추가</p>
+            </div>
+            <div class="pop_con">
+                <ul class="user_select">
+                    <li>
+                        <div class="check_wrap">
+                            <input type="checkbox" id="user01">
+                            <label class="user_info" for="user01">
+                                <span class="user_name">강형욱</span>
+                                <span class="user_department">개발팀</span>
+			                </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check_wrap">
+                            <input type="checkbox" id="user02">
+                            <label class="user_info" for="user02">
+                                <span class="user_name">노홍철</span>
+                                <span class="user_department">경영지원팀</span>
+			                </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check_wrap">
+                            <input type="checkbox" id="user03">
+                            <label class="user_info" for="user03">
+                                <span class="user_name">도경수</span>
+                                <span class="user_department">개발팀</span>
+			                </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check_wrap">
+                            <input type="checkbox" id="user04">
+                            <label class="user_info" for="user04">
+                                <span class="user_name">라이언</span>
+                                <span class="user_department">디자인팀</span>
+			                </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check_wrap">
+                            <input type="checkbox" id="user05">
+                            <label class="user_info" for="user05">
+                                <span class="user_name">마동석</span>
+                                <span class="user_department">기획팀</span>
+			                </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check_wrap">
+                            <input type="checkbox" id="user06">
+                            <label class="user_info" for="user06">
+                                <span class="user_name">박명수</span>
+                                <span class="user_department">디자인팀</span>
+			                </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check_wrap">
+                            <input type="checkbox" id="user07">
+                            <label class="user_info" for="user07">
+                                <span class="user_name">성심당</span>
+                                <span class="user_department">디자인팀</span>
+			                </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check_wrap">
+                            <input type="checkbox" id="user08">
+                            <label class="user_info" for="user08">
+                                <span class="user_name">이수만</span>
+                                <span class="user_department">기획팀</span>
+			                </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check_wrap">
+                            <input type="checkbox" id="user09">
+                            <label class="user_info" for="user09">
+                                <span class="user_name">재갈유진</span>
+                                <span class="user_department">기획팀</span>
+			                </label>
+                        </div>
+                    </li><li>
+                        <div class="check_wrap">
+                            <input type="checkbox" id="user10">
+                            <label class="user_info" for="user10">
+                                <span class="user_name">차승원</span>
+                                <span class="user_department">기획팀</span>
+			                </label>
+                        </div>
+                    </li><li>
+                        <div class="check_wrap">
+                            <input type="checkbox" id="user11">
+                            <label class="user_info" for="user11">
+                                <span class="user_name">카리나</span>
+                                <span class="user_department">기획팀</span>
+			                </label>
+                        </div>
+                    </li><li>
+                        <div class="check_wrap">
+                            <input type="checkbox" id="user12">
+                            <label class="user_info" for="user12">
+                                <span class="user_name">태을미</span>
+                                <span class="user_department">개발팀</span>
+			                </label>
+                        </div>
+                    </li><li>
+                        <div class="check_wrap">
+                            <input type="checkbox" id="user13">
+                            <label class="user_info" for="user13">
+                                <span class="user_name">피복일</span>
+                                <span class="user_department">경영지원팀</span>
+			                </label>
+                        </div>
+                    </li><li>
+                        <div class="check_wrap">
+                            <input type="checkbox" id="user14">
+                            <label class="user_info" for="user14">
+                                <span class="user_name">황보윤지</span>
+                                <span class="user_department">기획팀</span>
+			                </label>
+                        </div>
+                    </li>
+                </ul>
+                <button type="button" class="btn_core">확인</button>
+            </div>
+        </div>
+        <div class="back_btn"></div>
+    </div>
+</body>
+</html>
